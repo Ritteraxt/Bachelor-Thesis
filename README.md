@@ -18,5 +18,8 @@ The Notebook "Tetrahedron_analysis_Meshgrid":
 This notebook calculates the Bessel integral in analytical form. In principle, on can just calculate the data of an individual combination of k1,k2,k3 and l1,l2,l3 with the "J_Modified" function. If you wish to plot a cut-through though a tetrahedron for a given combination of l, then use the function "Int_G_Meshgrid" instead. This will calculate the alpha-beta plane for the sampling that can be manually set when calculating "AlphaArray" and "BetaArray". Note that this cut-through can only be plotted with the Plotroutine "Plot_The_triangle" (different notebook), if alpha_initial and beta_initial have the same number of points. Finally, if the data is generated, save it to a .npy file with the prefix "DataDreieckMashgrid", so that the plot routine works. I know that that is surely not the most beautiful solution, but the time schedule is tight and it works.
 
 
+The Notebook "Plot_The_Triangle":
+This is a very limited plotting routine. It will only accept data in the form that is mentioned above, i.e. there must be a file with the prefix "DataDreieckMashgrid" in the filename. The data must be the integral values in the form of the meshgrid. The plot can be done logarithmically or normal; the layout can be changed. Also, if the l´s have a symmetryline in l1, one is allowed to calculate only HALF the triangle, so with alpha going from 0 to 1 with HALF as many points. Probably this plot routine is not too helpful.
+
 
 
